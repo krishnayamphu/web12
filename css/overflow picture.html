@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 10px solid green;
+            float: left;
+            margin: 15px;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            text-align: justify;
+            padding: 10px;
+        }
+        .overflow-visible{ overflow: hidden;}
+        .overflow-hidden{overflow-x: hidden;}
+        .overflow-scroll{overflow-y:hidden;} 
+   </style>
+</head>
+<body>
+    <div class="overflow-visible">
+       <img src="bug.jpg" alt="">
+    </div>
+    <div class="overflow-hidden">
+        <img src="bug.jpg" alt="">
+    </div>
+    <div class="overflow-scroll">
+        <img src="bug.jpg" alt="">
+    </div>
+</body>
+</html>
