@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        p:first-child{color:red;}
+        p:last-child{color:green;}
+        p:nth-child(3){color:blue;}
+
+        ul{
+            list-style: none;
+            width: 100px;
+        }
+        ul li{
+            border-bottom: 1px solid #ccc;
+            padding: 8px 5px;
+        }
+        ul li:last-child{
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+    <hr>
+
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+</body>
+</html>
