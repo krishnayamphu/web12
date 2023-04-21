@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            background-color: teal;
+            display: inline-block;
+            padding: 5px;
+        }
+        .dropdown a{
+            color:white;
+            text-decoration: none;
+        }
+        .dropdown-list{
+            background-color:tomato;
+            position: absolute;
+            top:36px;
+            width: 78px;
+            left: 8px;
+            display: none;
+        }
+        .dropdown-list a{
+            display: block;
+            padding: 5px;
+        }
+        .dropdown:hover .dropdown-list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <a href="#">Dropdown</a>
+        <div class="dropdown-list">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+</body>
+</html>
