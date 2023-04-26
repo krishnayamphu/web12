@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+      div{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(207, 207, 21);
+        float: left;
+        margin: 30px;
+      }
+      .shadow-1{
+            box-shadow: 5px 4px 14px 0px red;
+      }
+      .shadow-inset{
+        background-color: white;
+            box-shadow:inset 0px 0px 14px red;
+      }
+      .shadow-multiple{
+            box-shadow: 5px 5px 10px red, -5px -5px 10px green;
+      }
+    </style>
+</head>
+<body>
+    <div class="shadow-1">dsfs</div>
+    <div class="shadow-inset"></div>
+    <div class="shadow-multiple"></div>
+</body>
+</html>
