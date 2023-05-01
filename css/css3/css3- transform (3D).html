@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+      .container{
+        width: 200px;
+        height: 200px;
+        border: 2px solid red;
+        margin: 15px;
+        float: left;
+       
+        perspective: 200px;
+      }
+      .box1{
+        width: 100px;
+        height: 100px;
+         transition: all 1s;
+        background-color: aqua;
+      }
+      .box1:hover{
+        transform: rotateY(180deg);
+      }   
+
+      .box2{
+        width: 100px;
+        height: 100px;
+         transition: all 1s;
+        background-color: aqua;
+      }
+      .box2:hover{
+        transform: translateZ(-100px);
+      }   
+    .box3{
+        width: 100px;
+        height: 100px;
+         transition: all 1s;
+        background-color: aqua;
+      }
+      .box3:hover{
+        transform: scaleY(2);
+      }   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Rotate</div>
+    </div>
+    <div class="container">
+        <div class="box2">Translate</div>
+    </div>
+    <div class="container">
+        <div class="box3">Scale</div>
+    </div>
+
+
+</body>
+</html>
