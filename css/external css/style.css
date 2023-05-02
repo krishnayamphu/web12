@@ -1,0 +1,31 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(5, 69, 5);
+    color:white;
+    text-align: center;
+    padding: 15px;
+}
+nav{
+    background-color: teal;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    padding: 5px 30px;
+    display: inline-block;
+}
+nav a:hover{
+    background-color: orangered;
+    transition: all 1s;
+}
+main{
+    padding: 30px;
+}
+main h1{
+    margin-bottom: 15px;
+}
