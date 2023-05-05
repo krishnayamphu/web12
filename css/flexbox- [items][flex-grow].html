@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+            width: 80%;
+            height: auto;
+            border: 1px solid red;
+            margin: 15px auto;
+            display: flex;
+        }
+    
+        .item{
+            background-color: green;
+            color:white;
+            height: 30px;
+            padding: 5px 0;
+            flex-grow: 1;
+        }
+        .item:nth-child(2),.item:nth-child(4){
+            background-color: orange;
+        }  
+        .flex-grow-2{flex-grow: 2;}     
+        .flex-grow-4{flex-grow: 4;}     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item flex-grow-2">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item flex-grow-4">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item flex-grow-4">Item 2</div>
+    </div>
+    <div class="container">
+        <div class="item flex-grow-4">Item 1</div>
+        <div class="item">Item 2</div>
+    </div>
+</body>
+</html>
