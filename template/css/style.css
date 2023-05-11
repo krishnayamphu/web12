@@ -1,0 +1,49 @@
+:root{
+    --primaryColor:#fd5f00;
+    --secondaryColor:#0d1128;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+}
+.row{
+    display: flex;
+}
+.col{
+    /* background-color: aqua; */
+    flex-grow: 1;
+}
+.align-item-center{
+    align-items: center;
+}
+.mr-15{ margin-right: 15px;}
+.header-contact i{
+    font-size: 18px;
+    color:var(--primaryColor);
+}
+.header-contact p{
+    color:#979797;
+}
+
+/* header */
+.text-brand{
+    font-size: 36px;
+    font-weight: bold;
+}
+.text-brand span{
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+header p{
+    font-size: 14px !important;
+}
