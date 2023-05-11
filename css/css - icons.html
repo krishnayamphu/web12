@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Icons</title>
+    <style>
+        .text-success{ color:green;}
+        .text-primary{ color:blue;}
+        .text-danger{ color:tomato;}
+        .text-big{font-size: 60px;}
+        .container
+        {
+            width: 80%;
+            padding: 15px;
+            margin: 15px auto;
+            background-color: #dfdfdf;
+        }
+        .btn-search{
+            background-color: #3152e5;
+            border: none;
+            padding: 5px 10px;
+            color:white;
+            border-radius: 2px;
+            box-shadow: 0px 1px 2px #a3a3a3;
+        }
+        .btn-search:hover{
+            background-color: #223fc1;
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-phone"></i>
+    <i class="fa-solid fa-user"></i>
+    <i class="fa-solid fa-envelope"></i>
+    <hr>
+    <p>Icons Color</p>
+    <i class="fa-solid fa-envelope text-success"></i>
+    <i class="fa-solid fa-envelope text-primary"></i>
+    <i class="fa-solid fa-envelope text-danger"></i>
+    <hr>
+    <p>Icons Size</p>
+    <i class="fa-solid fa-coffee fa-2xs"></i>
+    <i class="fa-solid fa-coffee fa-xs"></i>
+    <i class="fa-solid fa-coffee fa-sm"></i>
+    <i class="fa-solid fa-coffee text-danger"></i>
+    <i class="fa-solid fa-coffee fa-lg"></i>
+    <i class="fa-solid fa-coffee fa-xl"></i>
+    <i class="fa-solid fa-coffee fa-2xl"></i>
+    <i class="fa-solid fa-coffee text-big"></i>
+    <hr>
+    <p>Fixed width</p>
+    <!-- vertically aligning icons -->
+    <div style="font-size: 2rem;">
+        <div><i class="fa-solid fa-skating fa-fw" style="background:DodgerBlue"></i> Skating</div>
+        <div><i class="fa-solid fa-skiing fa-fw" style="background:SkyBlue"></i> Skiing</div>
+        <div><i class="fa-solid fa-skiing-nordic fa-fw" style="background:DodgerBlue"></i> Nordic Skiing</div>
+        <div><i class="fa-solid fa-snowboarding fa-fw" style="background:SkyBlue"></i> Snowboarding</div>
+        <div><i class="fa-solid fa-snowplow fa-fw" style="background:DodgerBlue"></i> Snowplow</div>
+    </div>
+  <hr>
+  <p>Icons in a List</p>
+<ul class="fa-ul">
+    <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>List icons can</li>
+    <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>be used to</li>
+    <li><span class="fa-li"><i class="fa-solid fa-spinner fa-pulse"></i></span>replace bullets</li>
+    <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>in lists</li>
+</ul>
+<hr>
+<p>Rotate Icons</p>
+<div class="fa-3x">
+    <i class="fa-solid fa-snowboarding"></i>
+    <i class="fa-solid fa-snowboarding fa-rotate-90"></i>
+    <i class="fa-solid fa-snowboarding fa-rotate-180"></i>
+    <i class="fa-solid fa-snowboarding fa-rotate-270"></i>
+    <i class="fa-solid fa-snowboarding fa-flip-horizontal"></i>
+    <i class="fa-solid fa-snowboarding fa-flip-vertical"></i>
+    <i class="fa-solid fa-snowboarding fa-flip-both"></i>
+</div>
+<hr>
+<p>Animating Icons</p>
+<div class="fa-3x">
+    <i class="fa-solid fa-circle-plus fa-beat"></i>
+    <i class="fa-solid fa-heart fa-beat"></i>
+    <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s;"></i>
+    <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 2s;"></i>
+    <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i>
+    <i class="fa-solid fa-download fa-beat" style="--fa-beat-scale: 2.0;"></i>
+</div>
+<hr>
+<p>Bordered Icons</p>
+<div class="container">
+<i class="fa-solid fa-quote-left fa-2x fa-pull-left"></i>
+Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
+And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.
+</div>
+
+<div class="container">
+    <i class="fa-solid fa-arrow-right fa-2x fa-pull-right fa-border"></i>
+    Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+    It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
+    And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.
+
+</div>
+<hr>
+<button><i class="fa-solid fa-paper-plane"></i> Send</button>
+<button><i class="fa-solid fa-user-plus"></i> Add User</button>
+<button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+
+<hr>
+<i class="fa-solid fa-envelope"></i>
+Email: <a href="">example@xyz.com</a>
+</body>
+</html>
