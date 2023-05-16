@@ -72,6 +72,12 @@ header p{
     justify-content: space-between;
     align-items: center;
 }
+nav .menu-bar{
+    color:white;
+    text-decoration: none;
+    padding-left: 15px;
+    display: none;
+}
 nav ul{
     list-style: none;
    
@@ -128,4 +134,25 @@ nav ul li.active a{
 }
 .banner h1{
     font-size: 60px;
+}
+
+/* responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   .d-sm-block{
+    display: block;
+   }
+    .col {
+        margin-bottom: 15px;
+    }
+    nav ul {
+        display: none;
+    }
+    nav .menu-bar {
+        display: block;
+    }
+
+        .banner h1 {
+            font-size: 30px;
+        }
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Desing</title>
+    <style>
+        body{ background-color: orange;}
+        .container{
+            background-color: #ccc;
+            padding: 15px;
+        }
+        .item{
+            width: 45%;
+            display: inline-block;
+        }
+
+        @media screen and (max-width:600px) {
+            body{ background-color: green;}
+            .item{
+            width: 100%;
+            display: block;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h3>First Section</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sunt ut, cupiditate tempora voluptatum explicabo. Obcaecati sint mollitia itaque, corrupti magnam nesciunt voluptatibus quos laborum, excepturi cupiditate deserunt, nobis fugiat.</p>
+        </div>    
+        <div class="item">
+            <h3>Second Section</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore quam iste nihil sit facere iusto, consequuntur a deserunt quos, possimus velit temporibus dicta ratione ullam tempora, maiores doloremque nulla.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
