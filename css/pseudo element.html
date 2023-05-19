@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        p::first-line{
+            color:red;
+        }
+        p::first-letter{
+            font-size: 40px;
+            color:black;
+            font-style: italic;
+        }
+        ::selection{
+            background-color: black;
+            color:gold;
+        }
+        h4::before{
+            content: open-quote;
+        }
+        h4::after{
+            content: close-quote;
+        }
+        h5::after{
+            content: url('emoji.gif');
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo Element</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias corporis rem neque voluptatum quidem iure totam repellat qui assumenda! Perferendis iure debitis porro cumque blanditiis voluptas. Eum neque dolores optio.</p>
+
+<h4>Hello World</h4>
+<h5>Hello World</h5>
+</body>
+</html>
