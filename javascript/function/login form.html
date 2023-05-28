@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        #erruser,
+        #errpass {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="Username" id="username">
+        <p id="erruser"></p>
+        <input type="password" placeholder="Password" id="password">
+        <p id="errpass"></p>
+        <button type="button" onclick="validate()">Login</button>
+    </form>
+
+    <script>
+        function validate() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            if (username == "" || username == null) {
+                document.getElementById("erruser").innerHTML = "Please enter username";
+                // alert("Please enter username");
+            } else if (password == "" || password == null) {
+                document.getElementById("errpass").innerHTML = "Please enter password";
+                // alert("Please enter password");
+            } else if (username == "admin" && password == "a123") {
+                alert("Welcome Admin");
+            } else {
+                document.getElementById("errpass").innerHTML = "Invalid username or password";
+            }
+        }
+    </script>
+</body>
+
+</html>
