@@ -6,22 +6,10 @@
 </head>
 <body>
 <script>
-    let date=new Date();
-    let day=date.getDay()+1; //0-6
-    let d=date.getDate();
-    let mo=date.getMonth()+1; //0-11;
-    let y=date.getFullYear();
-
-    let h=date.getHours();
-    let m=date.getMinutes();
-    let s=date.getSeconds();
-    let ms=date.getMilliseconds();
-
-
-    document.write(new Date()+"<br>");
-    document.write(day+", "+d+"-"+mo+"-"+y+"<br>");
-
-    document.write(h+" : "+m+" : "+s+" : "+ms);
+ function hello(){
+     document.write("hello<br>");
+ }
+ setInterval("hello()",1000);
 </script>
 </body>
 </html>

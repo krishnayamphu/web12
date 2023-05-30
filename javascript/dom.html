@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+
+<body>
+    <button id="btn1">Add Paragraph</button>
+    <button id="btn2">Remove Heading</button>
+    <hr>
+    <div id="container">
+        <h1 id="heading">Dom Element Heading</h1>
+    </div>
+    <script>
+        document.getElementById("btn1").onclick = function () { createParagraph(); };
+        function createParagraph() {
+            let el = document.createElement("p");
+            el.innerHTML = "Sample text content";
+            document.getElementById("container").appendChild(el);
+        }
+
+        const btn2 = document.getElementById("btn2");
+        btn2.onclick = function () {
+            document.getElementById("heading").remove();
+        }
+
+
+    </script>
+
+</body>
+
+</html>

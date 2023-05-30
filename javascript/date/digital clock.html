@@ -3,14 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .clock{
+            background-image: url("pic.jpg");
+            width: 300px;
+            height: 188px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 50px auto;
+        }
+        .clock input{
+            position: relative;
+            font-size: 46px;
+            font-weight: bold;
+            width: 211px;
+            top: 66px;
+            left: 61px;
+            border: none;
+            padding: 7px 0px;
+
+        }
+    </style>
 </head>
 <body>
+<form name="frm" class="clock">
+    <input type="text" name="txtbox">
+</form>
 <script>
- function hello(){
-     document.write("hello<br>");
- }
-
- setInterval("hello()",1000);
+    function clock(){
+        let date=new Date();
+        let h=date.getHours();
+        if(h>12)
+            h=h-12;
+        let m=date.getMinutes();
+        let s=date.getSeconds();
+        let ms=date.getMilliseconds();
+       document.forms['frm'].txtbox.value=h+" : "+m+" : "+s;
+       // document.forms['frm'].txtbox.value=h+" : "+m;
+    }
+    setInterval("clock()",1000);
 </script>
 </body>
 </html>
