@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            text-align: justify;
+            background-color: teal;
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">SlideUp</button>
+    <button id="btn2">SlideDown</button>
+    <button id="btn3">SlideToggle</button>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quidem voluptatem ea quos! Praesentium debitis
+        tempora ipsa, obcaecati quos earum, nam eveniet doloremque numquam dolorem ab optio illo maxime alias!</p>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            /* hide paragraph */
+            $("#btn1").click(function () {
+                $("p").slideUp(1000);
+            });
+
+            /* show paragraph */
+            $("#btn2").click(function () {
+                $("p").slideDown(1000);
+            });
+
+            /* toggle paragraph */
+            $("#btn3").click(function () {
+                $("p").slideToggle(1000);
+            });
+        });
+    </script>
+</body>
+
+</html>
