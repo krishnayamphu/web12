@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">After</button>
+    <button id="btn2">Before</button>
+
+    <p>Hello</p>
+
+
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $("p").after("<p>world</p>");
+            });
+            $("#btn2").click(function () {
+                $("p").before("<p>world</p>");
+            });
+        });
+    </script>
+</body>
+
+</html>
