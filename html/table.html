@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        th,
+        td {
+            border: 1px solid grey;
+            padding: 5px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        thead {
+            background-color: #ccc;
+        }
+
+        tfoot {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>SN</th>
+            <th>Items</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Apple</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mango</td>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+            <th colspan="2">Amount</th>
+        </tr>
+        <tr>
+            <th>Rs</th>
+            <th>Paisa</th>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th rowspan="2">Country</th>
+            <td>Nepal</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+        </tr>
+    </table>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sn</th>
+                <th>items</th>
+                <th>price</th>
+                <th>qty</th>
+                <th>amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>pen</td>
+                <td>15</td>
+                <td>3</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>copy</td>
+                <td>50</td>
+                <td>4</td>
+                <td>200</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Total</th>
+                <th>245</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
