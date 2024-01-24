@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p:nth-child(2) {
+            color: green;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 2px 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #db9595;
+        }
+
+        ul {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        ul li {
+            border-bottom: 1px solid grey;
+            padding: 2px 10px;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+
+    <table>
+        <tr>
+            <th>SN</th>
+            <th>Items</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Apple</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mango</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Orange</td>
+        </tr>
+    </table>
+
+
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+</body>
+
+</html>
