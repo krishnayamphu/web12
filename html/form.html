@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+    <style>
+        label {
+            display: block;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type='checkbox'],
+        input[type='radio'] {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" value="Admin" placeholder="enter name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="example@email.com" required>
+
+        <label>Number</label>
+        <input type="number" step="2">
+
+        <label>Search</label>
+        <input type="search" placeholder="search">
+
+        <label>Password</label>
+        <input type="password" placeholder="password">
+
+        <label>Checkbox</label>
+        <input type="checkbox" name="ckb[]" value="cb1" checked>Checkbox 1
+        <input type="checkbox" name="ckb[]" value="cb2">Checkbox 2
+
+        <label>Radio</label>
+        <input type="radio" name="radioGroup" value="r1">Radio 1
+        <input type="radio" name="radioGroup" value="r2">Radio 2
+
+        <label>Color</label>
+        <input type="color">
+
+        <label>Range</label>
+        <input type="range" min="0" max="100" value="50">
+
+        <label>Date</label>
+        <input type="date">
+
+        <label>time</label>
+        <input type="time">
+
+        <label>Datetime</label>
+        <input type="datetime-local">
+
+        <label>File</label>
+        <input type="file">
+
+        <input type="hidden" value="aptech">
+
+        <label>Month</label>
+        <input type="month">
+
+        <label>Week</label>
+        <input type="week">
+
+        <label>Url</label>
+        <input type="url">
+
+        <label>Tel</label>
+        <input type="tel">
+
+        <label>Select</label>
+        <select name="country">
+            <optgroup label="Asia">
+                <option value="nepal">Nepal</option>
+                <option value="china" selected>China</option>
+                <option value="india">India</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="England">England</option>
+            </optgroup>
+        </select>
+
+        <label>Textarea</label>
+        <textarea name="" cols="30" rows="10"></textarea>
+
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+    </form>
+</body>
+
+</html>
