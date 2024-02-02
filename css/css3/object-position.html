@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        img {
+            width: 200px;
+            height: 300px;
+            border: 5px solid red;
+            margin: 15px;
+            object-fit: contain;
+        }
+
+        .top {
+            object-position: top;
+        }
+
+        .bottom {
+            object-position: bottom;
+        }
+
+        .img1 {
+            width: 400px;
+            height: 150px;
+        }
+
+        .left {
+            object-position: left;
+        }
+
+        .right {
+            object-position: right;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="capture.PNG" alt="">
+    <img class="top" src="capture.PNG" alt="">
+    <img class="bottom" src="capture.PNG" alt="">
+
+    <img class="img1 left" src="capture.PNG" alt="">
+    <img class="img1 right" src="capture.PNG" alt="">
+</body>
+
+</html>
