@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .box:hover {
+            background-color: green;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            font-size: 28px;
+            line-height: 200px;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            object-fit: cover;
+        }
+
+        img:hover {
+            opacity: 0.5;
+            width: 150px;
+            height: 150px;
+            transition: all 0.5s;
+        }
+
+        p:hover {
+            background-color: tomato;
+            padding: 15px;
+            transition: all 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        box
+    </div>
+
+    <img src="capture.PNG" alt="">
+    <img src="capture.PNG" alt="">
+    <img src="capture.PNG" alt="">
+    <img src="capture.PNG" alt="">
+    <img src="capture.PNG" alt="">
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel quia, fugiat consequatur soluta culpa alias
+        libero quis nihil amet. Atque nam eveniet eos sed quis ad consequuntur dolorem molestias.
+    </p>
+</body>
+
+</html>
