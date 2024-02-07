@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        .container {
+            margin: auto;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            position: relative;
+            perspective: 600px;
+            transform-style: preserve-3d;
+        }
+
+        .box1 {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            padding: 15px;
+            transform: rotateY(70deg);
+            background-color: rgba(255, 0, 0, 5);
+        }
+
+        .box2 {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            padding: 15px;
+            transform: rotateX(80deg);
+            background-color: rgba(37, 94, 4, 0.9);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+    </div>
+</body>
+
+</html>

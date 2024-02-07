@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        .container {
+            position: relative;
+            margin: auto;
+            height: 150px;
+            width: 250px;
+            border: 1px solid black;
+            perspective: 600px;
+            perspective-origin: center top;
+        }
+
+        .item {
+            padding: 50px 15px;
+            position: absolute;
+            background-color: red;
+            transform: rotateX(45deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">
+            Think that you are looking at a wall of a building.
+            See what happens with the perspective when you gradually
+            move closer to the building.
+        </div>
+    </div>
+</body>
+
+</html>
