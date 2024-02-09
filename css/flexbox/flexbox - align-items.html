@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .row {
+            margin: 15px;
+            border: 2px solid red;
+            display: flex;
+            height: 150px;
+        }
+
+        .col {
+            padding: 15px;
+            background-color: rgb(37, 111, 73);
+        }
+
+        .col:nth-child(even) {
+            background-color: rgb(189, 159, 78);
+            padding: 30px 15px;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .flex-end {
+            align-items: flex-end;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row stretch">
+        <div class="col">col-1</div>
+        <div class="col">col-2</div>
+        <div class="col">col-3</div>
+    </div>
+    <div class="row flex-start">
+        <div class="col">col-1</div>
+        <div class="col">col-2</div>
+        <div class="col">col-3</div>
+    </div>
+
+    <div class="row center">
+        <div class="col">col-1</div>
+        <div class="col">col-2</div>
+        <div class="col">col-3</div>
+    </div>
+
+    <div class="row flex-end">
+        <div class="col">col-1</div>
+        <div class="col">col-2</div>
+        <div class="col">col-3</div>
+    </div>
+
+    <div class="row baseline">
+        <div class="col">col-1</div>
+        <div class="col">col-2</div>
+        <div class="col">col-3</div>
+    </div>
+</body>
+
+</html>
