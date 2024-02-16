@@ -2,6 +2,7 @@
     --primary-color:#e84545;
     --white:#fff;
     --dark:#222;
+    --text-color:#6c757d;
 }
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -11,9 +12,11 @@
 }
 p{
     line-height: 1.5;
+    color: var(--text-color);
 }
 /* #1266f2, #4f4f4f, #e84545 */
-/* utility */
+
+/* =========== utility ================================= */
 .row {
     display: flex;
     justify-content: center;
@@ -30,6 +33,13 @@ p{
 .mt-30{
     margin-top: 30px;
 }
+.w-50{
+    width: 50%!important;
+}
+.w-25{
+    width: 25%!important;
+}
+/* =========== utility ================================= */
 
 /* header banner */
 header{
@@ -123,6 +133,7 @@ header form button{
 #getStarted p{
 width: 60%;
 margin: 15px auto;
+color:var(--white)
 }
 
 .btn-action{
@@ -166,13 +177,82 @@ margin-bottom: 30px;
     /* height: 300px;
     object-fit: cover; */
 }
-#services img:hover{
-    opacity: 0.7;
+#services .img-grid{
+    position: relative;
     transition: all 0.5s;
+}
+#services .grid-overlay {
+    background-color: rgba(232, 69, 69,0.95);
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#services .img-grid:hover .grid-overlay {
+    display: flex;
+    transition: all 0.5s;
+}
+#services .grid-overlay span{
+    color:rgba(255, 255, 255,0.5);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#services .grid-overlay h4 {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 24px;
 }
 .download{
     padding: 120px 0;
     text-align: center;
     color:var(--white);
     background-color: rgb(33,37,41);
+}
+
+/* #getInTouch */
+#getInTouch{
+    padding: 60px 0;
+    text-align: center;
+}
+#getInTouch h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#getInTouch form input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+#getInTouch form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+#getInTouch form button {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* footer */
+footer{
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+    font-size: 20px;
 }
