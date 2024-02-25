@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        div {
+            width: 150px;
+            height: 100px;
+            border: 1px solid red;
+            margin: 15px;
+            float: left;
+        }
+
+        .box1 {
+            background-image: radial-gradient(red, blue);
+        }
+
+        .box2 {
+            background-image: radial-gradient(circle, red, blue);
+        }
+
+        .box3 {
+            background-image: radial-gradient(red, green, yellow, blue, purple);
+        }
+
+        .box4 {
+            background-image: radial-gradient(circle, rgb(255, 0, 0), rgba(0, 0, 255, 0.5));
+        }
+
+        .box5 {
+            background-image: radial-gradient(circle, red 0%, blue 39%, green 69%, yellow 89%);
+        }
+
+        .box6 {
+            background-image: repeating-radial-gradient(circle, red, blue 10%, yellow 20%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+</body>
+
+</html>
