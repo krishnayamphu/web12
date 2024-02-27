@@ -1,0 +1,12 @@
+/* #hero-banner */
+#hero-banner{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#hero-banner p{
+letter-spacing: 1px;
+}
+#hero-banner input{
+    width: 400px;
+}
