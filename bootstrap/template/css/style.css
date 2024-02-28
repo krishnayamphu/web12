@@ -1,3 +1,7 @@
+:root{
+    --primary-color:rgb(232, 69, 69);
+}
+
 /* #hero-banner */
 #hero-banner{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/hero-bg.jpg);
@@ -7,6 +11,44 @@
 #hero-banner p{
 letter-spacing: 1px;
 }
-#hero-banner input{
-    width: 400px;
+
+
+/* #aboutUs */
+#aboutUs{
+    background-color: #f4f4f4;
+    transition: all 0.5s;
+   
+}
+#aboutUs span{
+background-color: rgba(232, 69, 69, 0.05);
+color: var(--primary-color);
+}
+.card-about span{
+    
+    display: block;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.card-about span>i{
+    font-size: 36px;
+    color: var(--primary-color);
+}
+.card-about:hover span{
+    background-color: var(--primary-color);
+    transition: all 0.5s;
+}
+.card-about:hover span>i{
+  
+    color: white;
+    transition: all 0.5s;
+}
+
+@media (min-width: 1200px) {
+#hero-banner input {
+        width: 400px;
+    }
 }
