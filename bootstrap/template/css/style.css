@@ -1,5 +1,9 @@
 :root{
     --primary-color:rgb(232, 69, 69);
+    --automatic-color:#32353a;
+}
+body{
+    color:var(--automatic-color);
 }
 
 /* #hero-banner */
@@ -46,6 +50,70 @@ color: var(--primary-color);
     color: white;
     transition: all 0.5s;
 }
+
+#showcase{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/laptop-hd-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#showcase h2{
+    font-size: 60px;
+}
+.my-heading {
+    font-weight: 700;
+    line-height: 1.2;
+    position:relative;
+}
+.my-heading::before{
+    content: "";
+    width: 50px;
+    height: 2px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    position: relative;
+    top:-7px
+}
+
+.my-heading::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    position: relative;
+        top: -7px
+}
+.card-service{
+    border-top: 2px solid #ccc;
+    padding: 30px 0;
+    position: relative;
+}
+.card-service::before{
+content: '';
+width: 50px;
+height: 2px;
+background-color: var(--primary-color);
+position: absolute;
+top: -2px;
+}
+.card-service i{
+font-size: 60px;
+}
+.card-service a{
+    text-decoration: none;
+}
+
+.card-service h3,.card-service p{
+    color:var(--automatic-color);
+}
+.card-service a:hover h3{
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+
 
 @media (min-width: 1200px) {
 #hero-banner input {
