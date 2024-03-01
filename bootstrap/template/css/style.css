@@ -1,6 +1,6 @@
 :root{
     --primary-color:rgb(232, 69, 69);
-    --automatic-color:#32353a;
+    --automatic-color:rgb(50, 53, 58);
 }
 body{
     color:var(--automatic-color);
@@ -112,7 +112,69 @@ font-size: 60px;
     color: var(--primary-color);
     transition: all 0.3s;
 }
+/* #callToAction */
+#callToAction{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/slide-1.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+.btn-action:hover{
+background-color: var(--primary-color);
+border-color: var(--primary-color);
+color:white;
+}
 
+
+/* footer */
+footer{
+background-color: #f4f4f4;
+}
+footer h5{
+    font-size: 16px;
+    font-weight: bold;
+}
+.social-links a{
+display: inline-block;
+text-decoration: none;
+color:rgba(0, 0, 0, 0.5);
+width: 40px;
+height: 40px;
+border: 1px solid rgba(0, 0, 0, 0.5);
+text-align: center;
+line-height: 40px;
+margin-right: 10px;
+border-radius: 50%;
+}
+.social-links a:hover{
+    color:var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.5s;
+}
+.footer-links-list li{
+background-color: transparent;
+border-bottom: none;
+padding-left: 0;
+}
+.footer-links-list li a{
+    color:rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+.footer-links-list li a:hover{
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.copyright{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.copyright a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.copyright a:hover{
+    color: rgba(232, 69, 69,0.7);
+}
 
 
 @media (min-width: 1200px) {
