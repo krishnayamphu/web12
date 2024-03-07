@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+
+<body>
+    <script>
+        const color = new Array("red", "green", "blue");
+        i = 0;
+        setInterval(() => {
+            document.bgColor = color[i];
+            i++;
+            if (i == 3)
+                i = 0
+        }, 1000);
+    </script>
+</body>
+
+</html>
