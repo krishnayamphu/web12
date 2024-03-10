@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- <button onclick="changeColor()">Set Color</button> -->
+    <button id="btn1">Set Color</button>
+    <script>
+        document.getElementById("btn1").addEventListener("mouseover", changeColor);
+        document.getElementById("btn1").addEventListener("mouseout", setDefaultColor);
+        function changeColor() {
+            document.bgColor = "red";
+        }
+        function setDefaultColor() {
+            document.bgColor = "white";
+        }
+
+    </script>
+</body>
+
+</html>
