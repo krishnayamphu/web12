@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            border: 1px solid rgb(224, 224, 224);
+            width: 300px;
+            margin: 30px auto;
+            padding: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #err {
+            display: block;
+            color: rgb(216, 41, 41);
+            font-size: 12px;
+        }
+
+        button {
+            padding: 2px 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="f" onsubmit="return valid()">
+        <label for="textData">Enter some text</label>
+        <input type="text" id="textData" name="textData">
+        <span id="err"></span>
+        <button>Submit</button>
+    </form>
+    <script>
+        function valid() {
+            // let textData = document.getElementById("textData").value;
+            let textData = document.forms["f"].textData.value;
+            if (textData == "") {
+                document.getElementById("err").innerHTML = "Please fill out this field first."
+                document.forms["f"].textData.focus();
+                return false;
+            }
+            else {
+                document.write("Output: " + textData)
+                return true;
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

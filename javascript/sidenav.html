@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        @keyframes animate {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background-color: rgb(130, 157, 208);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            padding: 5px 15px;
+        }
+
+        nav button {
+            padding: 2px 5px;
+            margin-right: 15px;
+        }
+
+        #btnClose {
+            display: none;
+        }
+
+        #sideNav {
+            background-color: black;
+            display: none;
+            flex-direction: column;
+            width: 200px;
+            height: calc(100vh - 28.4px);
+            animation: animate 0.1s;
+        }
+
+        #sideNav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            transition: all 0.3s;
+        }
+
+        #sideNav a:hover {
+            background-color: rgb(216, 215, 215);
+            color: black
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#">Brand</a>
+        <div>
+            <button id="btnOpen" onclick="openMenu()">open</button>
+            <button id="btnClose" onclick="closeMenu()">close</button>
+        </div>
+    </nav>
+    <div id="sideNav">
+        <a href="">Home</a>
+        <a href="">Blog</a>
+        <a href="">Product</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </div>
+    <script>
+        function closeMenu() {
+            document.getElementById("sideNav").style.display = 'none';
+            document.getElementById("btnClose").style.display = 'none';
+            document.getElementById("btnOpen").style.display = 'block';
+        }
+        function openMenu() {
+            document.getElementById("sideNav").style.display = 'flex';
+            document.getElementById("btnOpen").style.display = 'none';
+            document.getElementById("btnClose").style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>

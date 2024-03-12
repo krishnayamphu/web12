@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        let date = new Date();
+
+        let day = date.getDay() + 1;
+        let d = date.getDate();
+        let mo = date.getMonth() + 1;
+        let y = date.getFullYear();
+
+        let h = date.getHours();
+        if (h > 12) {
+            h = h - 12;
+        }
+        let m = date.getMinutes();
+        let s = date.getSeconds();
+        let ms = date.getMilliseconds();
+
+        document.write(date);
+        document.write("<hr>")
+        document.write(day + ", " + d + "-" + mo + "-" + y);
+        document.write("<br>")
+        document.write(h + " :  " + m + " : " + s + " : " + ms);
+
+    </script>
+
+</body>
+
+</html>
