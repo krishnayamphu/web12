@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            margin: 15px 0 0 15px;
+            padding: 5px 15px;
+        }
+
+        .container {
+            border: 1px solid red;
+            margin: 15px 15px;
+            padding: 15px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">SlideUp</button>
+    <button id="btn2">SlideDown</button>
+    <button id="btn3">SlideToggle</button>
+
+    <div class="container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At perspiciatis esse numquam quis repellendus
+            officia rerum nam, aliquam illum, hic tempora quae fugiat est eum corporis iusto nobis? Nobis, similique.
+        </p>
+    </div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //slideup content
+            $("#btn1").click(function () {
+                $("div").slideUp(1000);
+            });
+
+            //slidedown content
+            $("#btn2").click(function () {
+                $("div").slideDown(1000);
+            });
+
+            //slidetoggle content
+            $("#btn3").click(function () {
+                $("div").slideToggle(1000);
+            });
+        });
+    </script>
+</body>
+
+</html>
