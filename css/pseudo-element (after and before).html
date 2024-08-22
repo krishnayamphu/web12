@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      h1::after {
+        content: "👋";
+      }
+      h1::before {
+        content: "♠︎";
+      }
+
+      p::before {
+        content: open-quote;
+      }
+      p::after {
+        content: close-quote;
+      }
+      li {
+        list-style: none;
+      }
+      li::before {
+        content: "✤";
+        margin-right: 6px;
+      }
+      li::after {
+        content: "♚";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempore
+      molestiae labore commodi iusto non earum libero sapiente est eaque. Ipsam
+      provident excepturi earum, itaque veritatis mollitia omnis labore
+      nesciunt.
+    </p>
+
+    <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+    </ul>
+  </body>
+</html>
