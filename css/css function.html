@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      .box1 {
+        width: calc(100vw - 200px);
+        height: 100px;
+        background-color: aqua;
+        margin: 15px auto;
+      }
+
+      .box2 {
+        width: min(100%, 400px);
+        height: 100px;
+        background-color: rgb(113, 69, 217);
+        margin: 15px 0;
+      }
+
+      .box3 {
+        width: max(100%, 600px);
+        height: 100px;
+        background-color: rgb(44, 109, 83);
+        margin: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </body>
+</html>
