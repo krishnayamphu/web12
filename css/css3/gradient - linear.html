@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgb(10, 106, 113);
+        float: left;
+        margin: 15px;
+      }
+      .box1 {
+        background-image: linear-gradient(red, blue);
+      }
+      .box2 {
+        background-image: -webkit-linear-gradient(left, red, blue);
+      }
+      .box3 {
+        background-image: -webkit-linear-gradient(top left, red, blue);
+      }
+      .box4 {
+        background-image: linear-gradient(45deg, red, blue);
+      }
+      .box5 {
+        background-image: linear-gradient(90deg, red, blue, green, yellow);
+      }
+      .box6 {
+        background-image: linear-gradient(
+          90deg,
+          red 33%,
+          blue 33%,
+          blue 66%,
+          yellow 66%
+        );
+      }
+      .box7 {
+        background-image: linear-gradient(90deg, red, rgba(0, 0, 255, 0.466));
+      }
+      .box8 {
+        background-image: repeating-linear-gradient(90deg, red, blue 10%);
+      }
+      .box9 {
+        background-image: repeating-linear-gradient(
+          45deg,
+          yellow,
+          red,
+          blue 10%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+  </body>
+</html>
