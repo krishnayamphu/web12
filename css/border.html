@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+      }
+      .box1 {
+        border-style: solid;
+        border-color: red;
+        border-width: 5px;
+      }
+      .box2 {
+        border: 5px dashed green;
+      }
+      .box3 {
+        border-top: 5px solid red;
+      }
+      .box4 {
+        border: 5px solid red;
+        border-top: none;
+      }
+      .box5 {
+        width: 0;
+        height: 0;
+        border-top: 50px solid red;
+        border-left: 50px solid blue;
+        border-right: 50px solid green;
+        border-bottom: 50px solid orangered;
+      }
+      .box6 {
+        width: 0;
+        height: 0;
+        background-color: transparent;
+        border-top: 50px solid transparent;
+        border-left: 50px solid blue;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <br />
+    <div class="box2"></div>
+    <br />
+    <div class="box3"></div>
+    <br />
+    <div class="box4"></div>
+    <br />
+    <div class="box5"></div>
+    <br />
+    <div class="box6"></div>
+  </body>
+</html>
