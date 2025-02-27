@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: aliceblue;
+      }
+      table {
+        background-color: white;
+        margin: 15px auto;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      th,
+      td {
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        font-weight: normal;
+      }
+      th img {
+        width: 10px;
+        height: 10px;
+      }
+      th a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        background-color: lightgray;
+        border-radius: 5px;
+      }
+      .calendar-title {
+        font-size: 18px;
+        font-weight: 400;
+        display: inline-block;
+        margin: 0 25px;
+      }
+      .text-secondary {
+        color: #ccc;
+      }
+      .curret-day {
+        border: 1px solid #6d49f0;
+        border-radius: 5px;
+      }
+      .active {
+        background-color: #6d49f0;
+        color: white;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th
+          colspan="7"
+          style="border-bottom: 1px solid #ccc; padding-bottom: 10px"
+        >
+          <a href="#"><img src="left.svg" alt="" /></a>
+          <span class="calendar-title">January 2025</span>
+          <a href="#">
+            <img src="right.png" alt="" />
+          </a>
+        </th>
+      </tr>
+      <tr class="text-secondary">
+        <th>Mo</th>
+        <th>Tu</th>
+        <th>We</th>
+        <th>Th</th>
+        <th>Fr</th>
+        <th>Sa</th>
+        <th>Su</th>
+      </tr>
+
+      <tr>
+        <td class="text-secondary">29</td>
+        <td class="text-secondary">30</td>
+        <td class="text-secondary">31</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>30</td>
+        <td class="curret-day">31</td>
+        <td>1</td>
+        <td>2</td>
+        <td class="active">3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>30</td>
+        <td>31</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>30</td>
+        <td>31</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+        <td class="text-secondary">1</td>
+        <td class="text-secondary">2</td>
+      </tr>
+    </table>
+  </body>
+</html>
