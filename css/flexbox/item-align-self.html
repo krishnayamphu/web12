@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .row {
+        display: flex;
+        border: 1px solid red;
+        margin: 15px;
+        height: 150px;
+        align-items: flex-start;
+      }
+      .col {
+        background-color: orange;
+        padding: 15px;
+      }
+      .col:nth-child(odd) {
+        background-color: teal;
+      }
+      .stretch {
+        align-self: stretch;
+      }
+      .center {
+        align-self: center;
+      }
+      .flex-end {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col stretch">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col center">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col flex-end">3</div>
+    </div>
+  </body>
+</html>

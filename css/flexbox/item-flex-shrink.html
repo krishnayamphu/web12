@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .row {
+        display: flex;
+        border: 1px solid red;
+        margin: 15px;
+        width: 400px;
+      }
+      .col {
+        background-color: orange;
+        width: 200px;
+      }
+      .col:nth-child(odd) {
+        background-color: teal;
+      }
+      .shrink {
+        flex-shrink: 1;
+      }
+      .shrink-2 {
+        flex-shrink: 2;
+      }
+      .shrink-3 {
+        flex-shrink: 3;
+      }
+      .shrink-0 {
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col shrink-2">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col shrink-0">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col shrink-0">1</div>
+      <div class="col shrink">2</div>
+      <div class="col shrink-3">3</div>
+    </div>
+  </body>
+</html>
