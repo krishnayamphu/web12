@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      @keyframes bgChange {
+        0% {
+          background-color: red;
+        }
+        100% {
+          background-color: blue;
+          transform: scale(0.1) rotate(360deg);
+          border-radius: 50%;
+        }
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+        margin: 15px;
+        animation-name: bgChange;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotateY(0deg);
+        }
+        100% {
+          transform: rotateY(360deg);
+        }
+      }
+
+      .container {
+        perspective: 500px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+      }
+      .box-item {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: rotate 2s infinite linear;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+
+    <div class="container">
+      <div class="box-item">Item</div>
+    </div>
+  </body>
+</html>
