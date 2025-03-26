@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      :root {
+        --primary-color: blue;
+        --bg-success: green;
+        --my-padding: 15px;
+        --radius: 10px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: var(--primary-color, red);
+        border-radius: var(--radius);
+      }
+      h1 {
+        color: var(--primary-color);
+      }
+      .bg-success {
+        background-color: var(--bg-success);
+      }
+      .content {
+        padding: var(--my-padding);
+        border-radius: var(--radius);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <h1>Hello Wolrd</h1>
+
+    <p class="content bg-success">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ea
+      harum non voluptate deserunt molestias. Magnam exercitationem fuga
+      voluptatibus quasi. Eaque laboriosam saepe libero inventore rem ullam
+      delectus ipsum quas.
+    </p>
+  </body>
+</html>
