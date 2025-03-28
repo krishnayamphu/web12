@@ -1,0 +1,6 @@
+:root {
+  --bs-primary-rgb: #e7272d;
+}
+.bg-primary {
+  background-color: var(--bs-primary-rgb) !important;
+}
