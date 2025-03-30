@@ -1,6 +1,31 @@
 :root {
   --bs-primary-rgb: #e7272d;
+  --bs-btn-color: #e7272d;
+  --bs-btn-border-color: #e7272d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #e7272d;
 }
 .bg-primary {
   background-color: var(--bs-primary-rgb) !important;
+}
+
+.btn-outline-primary {
+  border-color: #e7272d !important;
+  color: #e7272d !important;
+}
+.btn-outline-primary:hover {
+  background-color: #e7272d !important;
+  color: white !important;
+}
+
+#slider h2 {
+  font-size: 60px;
+  font-weight: bold;
+}
+#slider h5 {
+  font-size: 24px;
+  color: #666666;
+}
+#slider h5 span {
+  color: var(--bs-primary-rgb);
 }
