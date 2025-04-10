@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: aquamarine;
+      }
+      .container {
+        width: 300px;
+
+        margin: 0 auto;
+      }
+      .container input {
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="txtbox" />
+    </div>
+    <script>
+      function digitalClock() {
+        let time = new Date();
+        let h = time.getHours();
+        let m = time.getMinutes();
+        let s = time.getSeconds();
+        let ms = time.getMilliseconds();
+
+        let data = h + " : " + m + " : " + s;
+
+        document.getElementById("txtbox").value = data;
+      }
+
+      setInterval(digitalClock, 1);
+    </script>
+  </body>
+</html>
