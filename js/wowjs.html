@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <style>
+      div.wow {
+        width: 80%;
+        height: 200px;
+        background-color: aqua;
+        margin: 100px auto;
+        text-align: center;
+        padding: 50px;
+        line-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wow animate__fadeInDown" data-wow-duration="2s">
+      Content to Reveal Here
+    </div>
+    <div class="wow animate__fadeInLeft" data-wow-duration="2s">Content 1</div>
+    <div class="wow animate__fadeInRight" data-wow-duration="2s">Content 2</div>
+    <div class="wow animate__fadeInUp" data-wow-duration="2s">Content 3</div>
+    <div class="wow animate__flipInX" data-wow-duration="2s">Content 4</div>
+    <div class="wow animate__rotateInDownLeft" data-wow-duration="2s">
+      Content 5
+    </div>
+    <div class="wow animate__rotateInUpLeft" data-wow-duration="2s">
+      Content 6
+    </div>
+    <div class="wow animate__rotateOutDownRight" data-wow-duration="2s">
+      Content 7
+    </div>
+    <div class="wow animate__slideOutDown" data-wow-duration="2s">
+      Content 8
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
