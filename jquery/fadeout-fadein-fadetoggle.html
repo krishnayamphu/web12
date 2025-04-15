@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        background-color: pink;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">fadeout</button>
+    <button id="btn2">fadeIn</button>
+    <button id="btn3">fadeToggle</button>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+      repellat voluptatibus possimus. Culpa laudantium harum a omnis, cumque
+      eaque quis, at autem sapiente, est expedita nulla excepturi vero itaque
+      veniam?
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        //hide paragraph
+        $("#btn1").click(function () {
+          $("p").fadeOut(1000);
+        });
+
+        //show paragraph
+        $("#btn2").click(function () {
+          $("p").fadeIn(1000);
+        });
+
+        //hide paragraph
+        $("#btn3").click(function () {
+          $("p").fadeToggle(1000);
+        });
+      });
+    </script>
+  </body>
+</html>
