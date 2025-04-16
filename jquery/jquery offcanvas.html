@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: cadetblue;
+        padding: 5px 15px;
+      }
+      nav button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 32px;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .sidenav button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 10px;
+      }
+      .sidenav a {
+        padding: 0 15px;
+        display: block;
+        text-decoration: none;
+        color: white;
+      }
+      .w-200 {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <span>Navigation</span>
+    </nav>
+
+    <div class="sidenav">
+      <button class="closebtn">
+        <i class="fa-solid fa-close"></i>
+      </button>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#menu-btn").click(function () {
+          $(".sidenav").addClass("w-200");
+        });
+
+        $(".closebtn").click(function () {
+          $(".sidenav").removeClass("w-200");
+        });
+      });
+    </script>
+  </body>
+</html>
