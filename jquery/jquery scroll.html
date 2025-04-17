@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        height: 100px;
+        background-color: pink;
+        text-align: center;
+        line-height: 100px;
+        font-size: 20px;
+      }
+      .box {
+        width: 120px;
+        height: 100px;
+        background-color: aqua;
+        margin-top: 10px;
+      }
+      .container {
+        width: 80%;
+        height: 50vh;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        margin-bottom: 15px;
+      }
+      p {
+        line-height: 30px;
+      }
+
+      nav {
+        width: 100%;
+        background-color: #1d97e2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        transition: all 0.3s ease-in-out;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        padding: 20px 15px;
+        display: block;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .isPinned {
+        /* background-color: #f58337; */
+        color: white;
+        box-shadow: 0 2px 15px #333;
+      }
+      .isPinned a {
+        padding: 10px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </nav>
+
+    <main>
+      <div class="container">
+        <h1>jQuery</h1>
+        <p>
+          jQuery is a JavaScript library designed to simplify HTML DOM tree
+          traversal and manipulation, as well as event handling, CSS animation,
+          and Ajax. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus provident saepe possimus molestiae repellat ea
+          voluptates nostrum quisquam, voluptatum dolorum maxime corporis rem
+          consectetur quis enim delectus. Repellendus, illo deserunt?
+        </p>
+      </div>
+
+      <div class="container">
+        <h1>Hello World</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, totam
+          adipisci asperiores libero explicabo omnis repudiandae blanditiis!
+          Eaque rem, esse dolorem qui dignissimos officia at impedit dicta
+          repellat earum eligendi! Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Inventore amet aspernatur veniam aliquam recusandae.
+          Voluptates ipsam officiis itaque sit incidunt soluta architecto
+          consectetur labore facere, quod dolorum ex asperiores dolore.
+        </p>
+      </div>
+
+      <div class="container">
+        <h1>jQuery</h1>
+        <p>
+          jQuery is a JavaScript library designed to simplify HTML DOM tree
+          traversal and manipulation, as well as event handling, CSS animation,
+          and Ajax. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus provident saepe possimus molestiae repellat ea
+          voluptates nostrum quisquam, voluptatum dolorum maxime corporis rem
+          consectetur quis enim delectus. Repellendus, illo deserunt?
+        </p>
+      </div>
+
+      <div class="container">
+        <h1>Hello World</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, totam
+          adipisci asperiores libero explicabo omnis repudiandae blanditiis!
+          Eaque rem, esse dolorem qui dignissimos officia at impedit dicta
+          repellat earum eligendi! Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Inventore amet aspernatur veniam aliquam recusandae.
+          Voluptates ipsam officiis itaque sit incidunt soluta architecto
+          consectetur labore facere, quod dolorum ex asperiores dolore.
+        </p>
+      </div>
+
+      <div class="container">
+        <h1>jQuery</h1>
+        <p>
+          jQuery is a JavaScript library designed to simplify HTML DOM tree
+          traversal and manipulation, as well as event handling, CSS animation,
+          and Ajax. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus provident saepe possimus molestiae repellat ea
+          voluptates nostrum quisquam, voluptatum dolorum maxime corporis rem
+          consectetur quis enim delectus. Repellendus, illo deserunt?
+        </p>
+      </div>
+
+      <div class="container">
+        <h1>Hello World</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, totam
+          adipisci asperiores libero explicabo omnis repudiandae blanditiis!
+          Eaque rem, esse dolorem qui dignissimos officia at impedit dicta
+          repellat earum eligendi! Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Inventore amet aspernatur veniam aliquam recusandae.
+          Voluptates ipsam officiis itaque sit incidunt soluta architecto
+          consectetur labore facere, quod dolorum ex asperiores dolore.
+        </p>
+      </div>
+
+      <div class="container">
+        <h1>jQuery</h1>
+        <p>
+          jQuery is a JavaScript library designed to simplify HTML DOM tree
+          traversal and manipulation, as well as event handling, CSS animation,
+          and Ajax. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus provident saepe possimus molestiae repellat ea
+          voluptates nostrum quisquam, voluptatum dolorum maxime corporis rem
+          consectetur quis enim delectus. Repellendus, illo deserunt?
+        </p>
+      </div>
+
+      <div class="container">
+        <h1>Hello World</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, totam
+          adipisci asperiores libero explicabo omnis repudiandae blanditiis!
+          Eaque rem, esse dolorem qui dignissimos officia at impedit dicta
+          repellat earum eligendi! Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Inventore amet aspernatur veniam aliquam recusandae.
+          Voluptates ipsam officiis itaque sit incidunt soluta architecto
+          consectetur labore facere, quod dolorum ex asperiores dolore.
+        </p>
+      </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).scroll(function () {
+        if ($(document).scrollTop() > $("header").height()) {
+          $("nav").addClass("isPinned");
+        } else {
+          $("nav").removeClass("isPinned");
+        }
+      });
+    </script>
+  </body>
+</html>
