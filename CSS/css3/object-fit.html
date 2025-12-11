@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      img {
+        width: 200px;
+        height: 250px;
+        border: 5px solid blue;
+      }
+      .cover {
+        object-fit: cover;
+      }
+      .contain {
+        object-fit: contain;
+      }
+      .top {
+        object-position: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../ai.PNG" alt="" />
+    <img class="cover" src="../ai.PNG" alt="" />
+    <img class="contain" src="../ai.PNG" alt="" />
+    <img class="contain top" src="../ai.PNG" alt="" />
+  </body>
+</html>
