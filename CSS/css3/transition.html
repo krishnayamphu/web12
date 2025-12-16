@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition-property: all;
+        transition-duration: 10s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+      }
+      div:hover {
+        background-color: blue;
+        border-radius: 50%;
+      }
+      h1 {
+        transition: all 2s linear;
+      }
+      h1:hover {
+        color: red;
+        font-size: 40px;
+      }
+      img {
+        width: 200px;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
+      img:hover {
+        opacity: 1;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+
+    <h1>Hello World</h1>
+
+    <img src="../ai.PNG" alt="" />
+  </body>
+</html>
