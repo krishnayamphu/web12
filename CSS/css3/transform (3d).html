@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      section {
+        width: 80%;
+        height: 150px;
+        padding: 30px;
+        margin: 30px auto;
+        border: 2px solid red;
+        perspective: 500px;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        float: left;
+        margin: 15px;
+        transition: all 1s;
+      }
+      .box1:hover {
+        transform: translateX(50px);
+      }
+
+      .box2:hover {
+        transform: translateY(50px);
+      }
+      .box3:hover {
+        transform: translateZ(-50px);
+      }
+      .box4:hover {
+        transform: translate3d(50px, 50px, -50px);
+      }
+
+      .box5:hover {
+        transform: scaleX(2);
+      }
+      .box6:hover {
+        transform: scaleY(2);
+      }
+      .box7:hover {
+        transform: scaleZ(2);
+      }
+      .box8:hover {
+        transform: scale3d(2, 2, 2);
+      }
+
+      .box9:hover {
+        transform: rotateX(180deg);
+      }
+      .box10:hover {
+        transform: rotateY(180deg);
+      }
+      .box11:hover {
+        transform: rotateZ(180deg);
+      }
+      .box12:hover {
+        transform: rotate3d(-1, 0, 1, 180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box1">box 1</div>
+      <div class="box2">box 2</div>
+      <div class="box3">box 3</div>
+      <div class="box4">box 4</div>
+    </section>
+
+    <section>
+      <div class="box5">box 5</div>
+      <div class="box6">box 6</div>
+      <div class="box7">box 7</div>
+      <div class="box8">box 8</div>
+    </section>
+
+    <section>
+      <div class="box9">box 9</div>
+      <div class="box10">box 10</div>
+      <div class="box11">box 11</div>
+      <div class="box12">box 12</div>
+    </section>
+  </body>
+</html>
