@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      h1 {
+        text-align: center;
+        margin: 50px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        animation: textSize 2s infinite alternate;
+      }
+      h1::first-letter {
+        color: red;
+        font-size: 48px;
+      }
+
+      p::first-line {
+        color: blue;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque nam
+      temporibus aspernatur maiores! Repellat error, rerum quod molestias
+      possimus harum natus asperiores odio accusantium, eius blanditiis.
+      Delectus dignissimos sit veritatis?
+    </p>
+  </body>
+</html>
