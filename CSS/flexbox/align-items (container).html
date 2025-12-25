@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox - Container</title>
+    <style>
+      .row {
+        display: flex;
+        width: 80%;
+        margin: 15px auto;
+        border: 1px solid red;
+        height: 150px;
+      }
+      .col {
+        background-color: orange;
+      }
+      .col:nth-child(even) {
+        background-color: pink;
+      }
+      .col:last-child {
+        padding-top: 30px;
+      }
+      .stretch {
+        align-items: stretch;
+      }
+      .flex-start {
+        align-items: flex-start;
+      }
+      .center {
+        align-items: center;
+      }
+      .flex-end {
+        align-items: flex-end;
+      }
+      .baseline {
+        align-items: baseline;
+      }
+      .space-around {
+        justify-content: space-around;
+      }
+      .space-evenly {
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row stretch">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col"><span>item</span><br />3</div>
+    </div>
+    <div class="row flex-start">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col"><span>item</span><br />3</div>
+    </div>
+
+    <div class="row center">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col"><span>item</span><br />3</div>
+    </div>
+
+    <div class="row flex-end">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col"><span>item</span><br />3</div>
+    </div>
+
+    <div class="row baseline">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col"><span>item</span><br />3</div>
+    </div>
+  </body>
+</html>

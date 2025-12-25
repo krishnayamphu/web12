@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox - Container</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        display: flex;
+        width: 400px;
+        margin: 15px auto;
+        border: 1px solid red;
+      }
+      .col {
+        background-color: orange;
+        padding: 15px;
+        width: 198px;
+      }
+      .col:nth-child(even) {
+        background-color: pink;
+      }
+      .col:last-child {
+        background-color: lightblue;
+      }
+      .nowrap {
+        flex-wrap: nowrap;
+      }
+      .wrap {
+        flex-wrap: wrap;
+      }
+      .wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row nowrap">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row wrap">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row wrap-reverse">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+  </body>
+</html>
