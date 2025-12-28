@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox - Container</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        display: flex;
+        width: 80%;
+        margin: 15px auto;
+        border: 1px solid red;
+      }
+      .col {
+        background-color: orange;
+      }
+      .col:nth-child(even) {
+        background-color: pink;
+      }
+      .col:last-child {
+        background-color: lightblue;
+      }
+      .fb-100 {
+        flex-basis: 100px;
+      }
+      .fb-200 {
+        flex-basis: 200px;
+      }
+      .fb-300 {
+        flex-basis: 300px;
+      }
+      .grow-1 {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row gap-2">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col fb-100">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col fb-200">3</div>
+    </div>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col fb-300">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col fb-100">1</div>
+      <div class="col fb-100">2</div>
+      <div class="col fb-100">3</div>
+    </div>
+
+    <div class="row">
+      <div class="col fb-100">1</div>
+      <div class="col grow-1">2</div>
+    </div>
+  </body>
+</html>
