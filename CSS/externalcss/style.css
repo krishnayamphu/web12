@@ -1,0 +1,97 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px 0;
+  background-color: pink;
+}
+nav {
+  background-color: teal;
+  text-align: center;
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  transition: all 0.3s;
+}
+nav a:hover {
+  background-color: orangered;
+}
+nav a.active {
+  background-color: orangered;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+main section {
+  width: 70%;
+  padding: 15px;
+}
+main aside {
+  width: 30%;
+}
+
+section h1 {
+  margin-bottom: 15px;
+}
+section p {
+  line-height: 1.6;
+}
+
+section img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  margin-top: 15px;
+}
+aside h3 {
+  margin: 10px 0 10px 30px;
+}
+
+aside ul {
+  list-style: none;
+  margin-left: 30px;
+}
+aside ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input,
+form textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+form button:hover {
+  box-shadow: 0px 0px 5px #222;
+}
