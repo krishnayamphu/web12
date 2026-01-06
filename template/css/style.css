@@ -1,0 +1,33 @@
+/* #020d26*/
+
+.top-header {
+  background-color: #020d26;
+}
+
+.text-primary {
+  color: #ff5e14 !important;
+}
+.btn-primary {
+  background-color: #ff5e14 !important;
+  border: #ff5e14;
+}
+
+.brand-logo {
+  max-width: 120px;
+}
+.btn-search {
+  width: 40px !important;
+  height: 40px !important;
+  display: inline-block !important;
+}
+
+#highlights img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 25px;
+}
+
+#about-us span {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+}
