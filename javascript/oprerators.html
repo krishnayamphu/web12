@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      let x = 10;
+      let y = 6;
+      let z = 7;
+      document.writeln(++x);
+      document.writeln(5 ** 2);
+      document.writeln(24 % 4);
+
+      y += 3;
+
+      document.writeln("<br>" + y);
+      document.writeln(x < y || x < z);
+
+      document.writeln("<hr>");
+      let a = null;
+      let b = (a ??= 10); //number
+      let c = "10"; //string
+
+      document.writeln(b);
+
+      document.writeln("<br>" + (c === b));
+    </script>
+  </body>
+</html>
