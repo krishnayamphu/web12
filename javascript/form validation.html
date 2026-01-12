@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      form {
+        width: 300px;
+        box-shadow: 0 0 5px #ccc;
+        margin: 50px auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 5px;
+      }
+      input {
+        display: block;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      button {
+        padding: 5px;
+        background-color: #0372b2;
+        border: none;
+        border-radius: 2px;
+      }
+      form span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="return valid()">
+      <div>
+        <input type="email" id="email" placeholder="Email" />
+        <span id="emailErr"></span>
+      </div>
+      <input type="password" id="password" placeholder="Password" />
+      <button type="submit">Login</button>
+    </form>
+
+    <script>
+      function valid() {
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        if (email == "") {
+          alert("Email is required");
+          document.getElementById("emailErr").innerHTML = "Email is required";
+          document.getElementById("email").focus();
+          return false;
+        } else if (password == "") {
+          alert("Email is required");
+          document.getElementById("password").focus();
+          return false;
+        } else if (email == "admin@email.com" && password == "admin123") {
+          alert("Login success");
+          return true;
+        } else {
+          alert("Invalid email or password");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

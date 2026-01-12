@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <input type="text" id="name" placeholder="Name" oninput="blockLetter()" />
+    <p>Length: <span id="count">0</span></p>
+
+    <input
+      type="range"
+      id="myRange"
+      min="0"
+      max="100"
+      value="50"
+      oninput="getRangeValue()"
+    />
+    <span id="rangeValue"></span>
+
+    <script>
+      function blockLetter() {
+        let name = document.getElementById("name").value;
+        document.getElementById("name").value = name.toUpperCase();
+        document.getElementById("count").innerHTML = name.length;
+      }
+
+      function getRangeValue() {
+        let value = document.getElementById("myRange").value;
+        document.getElementById("rangeValue").innerHTML = value;
+      }
+    </script>
+  </body>
+</html>

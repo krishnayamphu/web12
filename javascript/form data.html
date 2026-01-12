@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="name" placeholder="Name" />
+      <button onclick="getData()">Submit</button>
+    </form>
+
+    <script>
+      function getData() {
+        let name = document.getElementById("name").value;
+        alert(name);
+      }
+    </script>
+  </body>
+</html>
