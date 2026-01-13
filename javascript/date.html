@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      const currentDate = new Date();
+      let day = currentDate.getDay() + 1;
+      let date = currentDate.getDate();
+      let mo = currentDate.getMonth() + 1;
+      let y = currentDate.getFullYear();
+
+      let h = currentDate.getHours();
+      let m = currentDate.getMinutes();
+      let s = currentDate.getSeconds();
+      let ms = currentDate.getMilliseconds();
+
+      document.writeln(currentDate);
+      document.writeln("<p>Day:" + day + "</p>");
+      document.writeln("<p>Date:" + date + "</p>");
+      document.writeln("<p>Month:" + mo + "</p>");
+      document.writeln("<p>Year:" + y + "</p>");
+
+      document.writeln("<p>" + h + " : " + m + " : " + s + " : " + ms + "</p>");
+    </script>
+  </body>
+</html>
