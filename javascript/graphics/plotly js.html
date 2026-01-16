@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <div id="myPlot" style="width: 100%; max-width: 700px"></div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+      const xArray = [55, 49, 44, 24, 15];
+      const yArray = ["Italy ", "France ", "Spain ", "USA ", "Nepal "];
+
+      const data = [
+        {
+          x: xArray,
+          y: yArray,
+          type: "bar",
+          orientation: "h",
+          marker: { color: "rgba(255,0,0,0.9)" },
+        },
+      ];
+
+      const layout = { title: "World Wide Wine Production" };
+
+      Plotly.newPlot("myPlot", data, layout);
+    </script>
+  </body>
+</html>

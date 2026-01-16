@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      section {
+        width: 800px;
+        margin: 15px auto;
+        padding: 15px;
+        background-color: aqua;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="wow animate__backInDown" data-wow-duration="2s">
+      Section 2
+    </section>
+
+    <section class="wow animate__wobble" data-wow-duration="2s"></section>
+    <section class="wow Leftanimate__backInDown" data-wow-duration="2s">
+      Section 3
+    </section>
+    <section class="wow Leftanimate__backInDown" data-wow-duration="2s">
+      Section 1
+    </section>
+    <section class="wow Leftanimate__backInDown" data-wow-duration="2s">
+      Section 5
+    </section>
+    <section class="wow animate__backInRight" data-wow-duration="2s">
+      Section 6
+    </section>
+    <section class="wow animate__backInRight" data-wow-duration="2s">
+      Section 7
+    </section>
+    <section class="wow animate__backInRight">Section 8</section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true, // default
+      });
+      wow.init();
+    </script>
+  </body>
+</html>

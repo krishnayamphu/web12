@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      section {
+        width: 800px;
+        margin: 15px auto;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+      <canvas id="myChart2" style="width: 100%; max-width: 600px"></canvas>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
+    <script>
+      const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+      const yValues = [55, 49, 44, 24, 15];
+      const barColors = ["red", "green", "blue", "orange", "brown"];
+
+      const ctx = document.getElementById("myChart");
+
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: { display: false },
+            title: {
+              display: true,
+              text: "World Wine Production 2018",
+              font: { size: 16 },
+            },
+          },
+        },
+      });
+
+      const xValues1 = ["Italy", "France", "Spain", "USA", "Argentina"];
+      const yValues2 = [55, 49, 44, 24, 15];
+      const barColors3 = [
+        "#b91d47",
+        "#00aba9",
+        "#2b5797",
+        "#e8c3b9",
+        "#1e7145",
+      ];
+
+      const ctx2 = document.getElementById("myChart2");
+
+      new Chart(ctx2, {
+        type: "pie",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: { display: true },
+            title: {
+              display: true,
+              text: "World Wine Production 2018",
+              font: { size: 16 },
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
